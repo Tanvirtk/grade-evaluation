@@ -6,7 +6,7 @@
     else if (mark >= 70&& mark<=74) return "A-";
     else if (mark >= 65&& mark<=69) return "B+";
     else if (mark >= 60&& mark<=64) return "B";
-    else if (mark >= 55&& mark<=599) return "B-";
+    else if (mark >= 55&& mark<=59) return "B-";
     else if (mark >= 50&& mark<=54) return "C+";
     else if (mark >= 45&& mark<=49) return "C";
     else if (mark >= 40&& mark<=44) return "D";
@@ -31,7 +31,7 @@ fgets(studentname, sizeof(studentname), stdin);
 studentname[strcspn(studentname, "\n")] = 0;
 
 
-      for (int i = 1; i <= 6; i++) {
+      for (int i = 0; i < 6; i++) {
         printf("Enter marks for subject %d: ", i );
         scanf("%d", &marks[i]);
 
